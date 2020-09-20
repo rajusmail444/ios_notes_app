@@ -25,6 +25,7 @@ class HomeViewController: UIViewController, ViewControllerProtocol {
         self.setupDetailsButton()
         self.setupWelcome()
         self.setupDetails()
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     private func setupDetailsButton() {

@@ -28,11 +28,6 @@
 		E173454C2445E3DD007CD373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E173454A2445E3DD007CD373 /* LaunchScreen.storyboard */; };
 		E1806ED7244DE79600296D82 /* ProfileViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1806ED6244DE79600296D82 /* ProfileViewModelSpec.swift */; };
 		E1806EDA244DE88D00296D82 /* ObservableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1806ED9244DE88D00296D82 /* ObservableHelpers.swift */; };
-		E18337D8244C316E00F5C780 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18337D7244C316E00F5C780 /* ProfileViewController.swift */; };
-		E18337DA244C319500F5C780 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18337D9244C319500F5C780 /* ProfileViewModel.swift */; };
-		E18337DC244C31B500F5C780 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18337DB244C31B500F5C780 /* ProfileCoordinator.swift */; };
-		E18337DE244C31C500F5C780 /* ProfileCoordinatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18337DD244C31C500F5C780 /* ProfileCoordinatorModel.swift */; };
-		E18337E0244C31DA00F5C780 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E18337DF244C31DA00F5C780 /* ProfileViewController.storyboard */; };
 		E18337F2244C673000F5C780 /* LeknesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18337F1244C673000F5C780 /* LeknesTests.swift */; };
 		E1927C612452EA0700C52BBA /* LeknesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1927C602452EA0700C52BBA /* LeknesUITests.swift */; };
 		E1927C682452EA5000C52BBA /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1927C592452E9C300C52BBA /* libTestLib.a */; };
@@ -144,11 +139,6 @@
 		E173454D2445E3DD007CD373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1806ED6244DE79600296D82 /* ProfileViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelSpec.swift; sourceTree = "<group>"; };
 		E1806ED9244DE88D00296D82 /* ObservableHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableHelpers.swift; sourceTree = "<group>"; };
-		E18337D7244C316E00F5C780 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		E18337D9244C319500F5C780 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		E18337DB244C31B500F5C780 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
-		E18337DD244C31C500F5C780 /* ProfileCoordinatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinatorModel.swift; sourceTree = "<group>"; };
-		E18337DF244C31DA00F5C780 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
 		E18337EF244C673000F5C780 /* LeknesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeknesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18337F1244C673000F5C780 /* LeknesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeknesTests.swift; sourceTree = "<group>"; };
 		E18337F3244C673000F5C780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -358,18 +348,6 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E18337D6244C313800F5C780 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				E18337D7244C316E00F5C780 /* ProfileViewController.swift */,
-				E18337D9244C319500F5C780 /* ProfileViewModel.swift */,
-				E18337DB244C31B500F5C780 /* ProfileCoordinator.swift */,
-				E18337DD244C31C500F5C780 /* ProfileCoordinatorModel.swift */,
-				E18337DF244C31DA00F5C780 /* ProfileViewController.storyboard */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		E18337F0244C673000F5C780 /* LeknesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,7 +419,6 @@
 			isa = PBXGroup;
 			children = (
 				E1AEE722245401D10082514F /* Error */,
-				E18337D6244C313800F5C780 /* Profile */,
 				E1573381244B446100B3AAD8 /* Nib */,
 				E1573370244AE9F200B3AAD8 /* Details */,
 				E157336F244AE9EB00B3AAD8 /* Home */,
@@ -608,7 +585,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1573385244B448E00B3AAD8 /* Welcome.xib in Resources */,
-				E18337E0244C31DA00F5C780 /* ProfileViewController.storyboard in Resources */,
 				E1B5A4EA24483DA500F67BD7 /* HomeViewController.storyboard in Resources */,
 				E173454C2445E3DD007CD373 /* LaunchScreen.storyboard in Resources */,
 				E17345492445E3DD007CD373 /* Assets.xcassets in Resources */,
@@ -753,17 +729,13 @@
 				E157337C244AEDA400B3AAD8 /* ViewControllerProtocol.swift in Sources */,
 				E1B5A4EE2448430700F67BD7 /* DetailsViewController.swift in Sources */,
 				E1B5A4E824483D9300F67BD7 /* HomeViewController.swift in Sources */,
-				E18337DC244C31B500F5C780 /* ProfileCoordinator.swift in Sources */,
 				E157338B244B4AFA00B3AAD8 /* AppFonts.swift in Sources */,
 				E1573376244AEAB500B3AAD8 /* NavigationStackAction.swift in Sources */,
 				E1573378244AECEF00B3AAD8 /* Router.swift in Sources */,
 				E1AEE71D245321140082514F /* LeknesDateFormatter.swift in Sources */,
 				E1B5A4EC244842EB00F67BD7 /* HomeViewModel.swift in Sources */,
 				E1573388244B469700B3AAD8 /* UIViewLoadNib.swift in Sources */,
-				E18337DA244C319500F5C780 /* ProfileViewModel.swift in Sources */,
-				E18337D8244C316E00F5C780 /* ProfileViewController.swift in Sources */,
 				E157338F244B511600B3AAD8 /* UIView+Extension.swift in Sources */,
-				E18337DE244C31C500F5C780 /* ProfileCoordinatorModel.swift in Sources */,
 				E1573372244AEA3100B3AAD8 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

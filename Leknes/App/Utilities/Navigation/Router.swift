@@ -20,10 +20,6 @@ struct Router: RouterProtocol {
         case let viewModel as HomeViewModel:
             return UIViewController.make(viewController: HomeViewController.self,
                                          viewModel: viewModel)
-        // MARK: PROFILE
-        case let viewModel as ProfileViewModel:
-            return UIViewController.make(viewController: ProfileViewController.self,
-                                         viewModel: viewModel)
             
         // MARK: DETAILS
         case let viewModel as DetailsViewModel:

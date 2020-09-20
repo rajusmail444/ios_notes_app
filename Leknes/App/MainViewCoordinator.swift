@@ -12,15 +12,12 @@ import RxSwift
 class MainViewCoordinator {
     var tabBarController: UITabBarController!
     var homeCoordinator: HomeCoordinator!
-    var profileCoordinator: ProfileCoordinator!
     
     init(tabBarController: UITabBarController) {
         self.tabBarController = tabBarController
         self.homeCoordinator = HomeCoordinator()
-        self.profileCoordinator = ProfileCoordinator()
         tabBarController.viewControllers = [
-            homeCoordinator.mainViewController,
-            profileCoordinator.mainViewController
+            homeCoordinator.mainViewController
         ]
     }
 
