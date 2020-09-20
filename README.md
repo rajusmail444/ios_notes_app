@@ -1,1 +1,2 @@
-# ios_notes_app
+# leknes-ios
+Project to create a Notes Application

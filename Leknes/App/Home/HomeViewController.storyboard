@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="EdO-lK-9vL">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="QAS-k1-myc" customClass="HomeViewController" customModule="Leknes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oef-p1-0o3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LqF-5e-fnF" customClass="Welcome" customModule="Leknes" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="350"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="R2t-jh-qfs"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWR-Sd-geI">
+                                <rect key="frame" x="20" y="444" width="374" height="30"/>
+                                <state key="normal" title="More_Details"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jiA-66-qPr" firstAttribute="trailing" secondItem="LqF-5e-fnF" secondAttribute="trailing" id="4Ia-r2-j3P"/>
+                            <constraint firstItem="iWR-Sd-geI" firstAttribute="leading" secondItem="jiA-66-qPr" secondAttribute="leading" constant="20" id="7FQ-pq-dbe"/>
+                            <constraint firstItem="LqF-5e-fnF" firstAttribute="top" secondItem="jiA-66-qPr" secondAttribute="top" id="8AR-Wi-NMe"/>
+                            <constraint firstItem="LqF-5e-fnF" firstAttribute="leading" secondItem="jiA-66-qPr" secondAttribute="leading" id="NMv-5e-fTF"/>
+                            <constraint firstItem="jiA-66-qPr" firstAttribute="trailing" secondItem="iWR-Sd-geI" secondAttribute="trailing" constant="20" id="VCl-Fj-AgB"/>
+                            <constraint firstItem="iWR-Sd-geI" firstAttribute="top" secondItem="LqF-5e-fnF" secondAttribute="bottom" constant="50" id="btR-8U-C9q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jiA-66-qPr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zg7-gJ-MkF"/>
+                    <connections>
+                        <outlet property="details" destination="iWR-Sd-geI" id="kdN-28-c9R"/>
+                        <outlet property="welcome" destination="LqF-5e-fnF" id="RDd-3p-MEh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSV-ML-nhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.73913043478262" y="-3.3482142857142856"/>
+        </scene>
+    </scenes>
+</document>
