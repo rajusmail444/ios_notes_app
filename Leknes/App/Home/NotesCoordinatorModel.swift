@@ -1,5 +1,5 @@
 //
-//  HomeCoordinatorModel.swift
+//  NotesCoordinatorModel.swift
 //  Leknes
 //
 //  Created by Rajesh Billakanti on 18/4/20.
@@ -8,15 +8,15 @@
 
 import RxSwift
 
-struct HomeCoordinatorModel {
+struct NotesCoordinatorModel {
     let disposeBag = DisposeBag()
     let navigationStackActions = PublishSubject<NavigationStackAction>()
 
     init() { }
 
-    func createHomeViewModel() -> HomeViewModel {
-        let homeViewModel = HomeViewModel()
-        homeViewModel.events.subscribe(onNext: { event in
+    func createNotesViewModel() -> NotesViewModel {
+        let notesViewModel = NotesViewModel()
+        notesViewModel.events.subscribe(onNext: { event in
             switch event {
             case .navigateToDetails:
                 let detailsViewModel = self.createDetailsViewModel()
@@ -24,7 +24,7 @@ struct HomeCoordinatorModel {
                                                          animated: true))
             }
         }).disposed(by: disposeBag)
-        return homeViewModel
+        return notesViewModel
     }
 
     func createDetailsViewModel() -> DetailsViewModel {

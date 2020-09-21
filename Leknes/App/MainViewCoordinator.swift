@@ -11,13 +11,13 @@ import RxSwift
 
 class MainViewCoordinator {
     var tabBarController: UITabBarController!
-    var homeCoordinator: HomeCoordinator!
+    var notesCoordinator: NotesCoordinator!
     
     init(tabBarController: UITabBarController) {
         self.tabBarController = tabBarController
-        self.homeCoordinator = HomeCoordinator()
+        self.notesCoordinator = NotesCoordinator()
         tabBarController.viewControllers = [
-            homeCoordinator.mainViewController
+            notesCoordinator.mainViewController
         ]
     }
 

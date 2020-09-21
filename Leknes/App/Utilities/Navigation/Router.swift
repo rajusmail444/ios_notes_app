@@ -16,9 +16,9 @@ struct Router: RouterProtocol {
     func viewController(forViewModel viewModel: Any) -> UIViewController {
         switch viewModel {
 
-        // MARK: HOME
-        case let viewModel as HomeViewModel:
-            return UIViewController.make(viewController: HomeViewController.self,
+        // MARK: Notes
+        case let viewModel as NotesViewModel:
+            return UIViewController.make(viewController: NotesViewController.self,
                                          viewModel: viewModel)
             
         // MARK: DETAILS
@@ -26,11 +26,10 @@ struct Router: RouterProtocol {
             return UIViewController.make(viewController: DetailsViewController.self,
                                          viewModel: viewModel)
         default:
-            return UIViewController.make(viewController: HomeViewController.self,
-                                         viewModel: HomeViewModel())
+            return UIViewController.make(viewController: NotesViewController.self,
+                                         viewModel: NotesViewModel())
         }
     }
-
 }
 
 

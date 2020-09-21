@@ -1,5 +1,5 @@
 //
-//  HomeCoordinator.swift
+//  NotesCoordinator.swift
 //  Leknes
 //
 //  Created by Rajesh Billakanti on 18/4/20.
@@ -9,15 +9,15 @@
 import UIKit
 import RxSwift
 
-class HomeCoordinator {
+class NotesCoordinator {
     var mainViewController: UINavigationController!
-    let homeCoordinatorModel: HomeCoordinatorModel
+    let notesCoordinatorModel: NotesCoordinatorModel
 
     private let disposeBag = DisposeBag()
     let router: RouterProtocol = Router()
 
     init() {
-        self.homeCoordinatorModel = HomeCoordinatorModel()
+        self.notesCoordinatorModel = NotesCoordinatorModel()
 
         setupController()
         setupNavigationStackAction()
@@ -27,15 +27,15 @@ class HomeCoordinator {
         let tabBarIcon = UITabBarItem(title: "Home",
                                       image: UIImage(named: "icTabbarHomeInactive"),
                                       selectedImage: UIImage(named: "icTabbarHomeActive"))
-        let viewModel = homeCoordinatorModel.createHomeViewModel()
-        let viewController = self.router.viewController(forViewModel: viewModel) as! HomeViewController
+        let viewModel = notesCoordinatorModel.createNotesViewModel()
+        let viewController = self.router.viewController(forViewModel: viewModel) as! NotesViewController
         viewController.tabBarItem = tabBarIcon
         mainViewController = UINavigationController(rootViewController: viewController)
         mainViewController.navigationBar.barTintColor = ColorTheme.white
     }
 
     private func setupNavigationStackAction() {
-        homeCoordinatorModel.navigationStackActions
+        notesCoordinatorModel.navigationStackActions
             .subscribe(onNext: { [weak self] event in
                 guard let self = self else { return }
                 switch event {

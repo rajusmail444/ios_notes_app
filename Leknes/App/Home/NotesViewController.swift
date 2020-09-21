@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  NotesViewController.swift
 //  Leknes
 //
 //  Created by Rajesh Billakanti on 16/4/20.
@@ -10,14 +10,14 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class HomeViewController: UIViewController, ViewControllerProtocol {
+class NotesViewController: UIViewController, ViewControllerProtocol {
     @IBOutlet weak var welcome: Welcome!
     @IBOutlet weak var details: UIButton!
     
     private let disposeBag = DisposeBag()
     
-    typealias ViewModelT = HomeViewModelType
-    var viewModel: HomeViewModelType!
+    typealias ViewModelT = NotesViewModelType
+    var viewModel: NotesViewModelType!
     
     override func viewDidLoad() {
         super.viewDidLoad()

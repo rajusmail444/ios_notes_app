@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  NotesViewModel.swift
 //  Leknes
 //
 //  Created by Rajesh Billakanti on 16/4/20.
@@ -9,19 +9,19 @@
 import Foundation
 import RxSwift
 
-enum HomeViewModelEvent {
+enum NotesViewModelEvent {
     case navigateToDetails
 }
 
-protocol HomeViewModelType {
-    var events: PublishSubject<HomeViewModelEvent> { get }
+protocol NotesViewModelType {
+    var events: PublishSubject<NotesViewModelEvent> { get }
     var detailsButtonTapped: PublishSubject<Void> { get }
 
 }
 
-class HomeViewModel: HomeViewModelType {
+class NotesViewModel: NotesViewModelType {
     let disposeBag = DisposeBag()
-    var events = PublishSubject<HomeViewModelEvent>()
+    var events = PublishSubject<NotesViewModelEvent>()
     var detailsButtonTapped = PublishSubject<Void>()
     init() {
         setupNavigateToDetails()
