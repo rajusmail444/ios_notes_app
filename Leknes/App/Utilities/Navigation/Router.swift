@@ -21,9 +21,9 @@ struct Router: RouterProtocol {
             return UIViewController.make(viewController: NotesViewController.self,
                                          viewModel: viewModel)
             
-        // MARK: DETAILS
-        case let viewModel as DetailsViewModel:
-            return UIViewController.make(viewController: DetailsViewController.self,
+        // MARK: NewNote
+        case let viewModel as NewNoteViewModel:
+            return UIViewController.make(viewController: NewNoteViewController.self,
                                          viewModel: viewModel)
         default:
             return UIViewController.make(viewController: NotesViewController.self,

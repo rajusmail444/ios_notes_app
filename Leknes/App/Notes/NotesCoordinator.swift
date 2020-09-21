@@ -24,7 +24,7 @@ class NotesCoordinator {
     }
 
     private func setupController() {
-        let tabBarIcon = UITabBarItem(title: "Home",
+        let tabBarIcon = UITabBarItem(title: "Notes",
                                       image: UIImage(named: "icTabbarHomeInactive"),
                                       selectedImage: UIImage(named: "icTabbarHomeActive"))
         let viewModel = notesCoordinatorModel.createNotesViewModel()

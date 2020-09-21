@@ -18,19 +18,19 @@ struct NotesCoordinatorModel {
         let notesViewModel = NotesViewModel()
         notesViewModel.events.subscribe(onNext: { event in
             switch event {
-            case .navigateToDetails:
-                let detailsViewModel = self.createDetailsViewModel()
-                self.navigationStackActions.onNext(.push(viewModel: detailsViewModel,
+            case .navigateToNewNote:
+                let newNoteViewModel = self.createNewNoteViewModel()
+                self.navigationStackActions.onNext(.push(viewModel: newNoteViewModel,
                                                          animated: true))
             }
         }).disposed(by: disposeBag)
         return notesViewModel
     }
 
-    func createDetailsViewModel() -> DetailsViewModel {
-        let detailsViewModel = DetailsViewModel()
+    func createNewNoteViewModel() -> NewNoteViewModel {
+        let newNoteViewModel = NewNoteViewModel()
         
-        return detailsViewModel
+        return newNoteViewModel
     }
 }
 

@@ -1,5 +1,5 @@
 //
-//  DetailsViewController.swift
+//  NewNoteViewController.swift
 //  Leknes
 //
 //  Created by Rajesh Billakanti on 16/4/20.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController, ViewControllerProtocol {
+class NewNoteViewController: UIViewController, ViewControllerProtocol {
     @IBOutlet weak var welcome: Welcome!
     
-    typealias ViewModelT = DetailsViewModelType
-    var viewModel: DetailsViewModelType!
+    typealias ViewModelT = NewNoteViewModelType
+    var viewModel: NewNoteViewModelType!
 
     override func viewDidLoad() {
         self.setupWelcome()

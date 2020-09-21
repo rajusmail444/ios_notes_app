@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 
 enum NotesViewModelEvent {
-    case navigateToDetails
+    case navigateToNewNote
 }
 
 protocol NotesViewModelType {
@@ -24,13 +24,13 @@ class NotesViewModel: NotesViewModelType {
     var events = PublishSubject<NotesViewModelEvent>()
     var detailsButtonTapped = PublishSubject<Void>()
     init() {
-        setupNavigateToDetails()
+        setupNavigateToNewNote()
     }
     
-    private func setupNavigateToDetails() {
+    private func setupNavigateToNewNote() {
         self.detailsButtonTapped.asObservable()
             .subscribe(onNext: {
-                self.events.onNext(.navigateToDetails)
+                self.events.onNext(.navigateToNewNote)
             }).disposed(by: disposeBag)
     }
 }
