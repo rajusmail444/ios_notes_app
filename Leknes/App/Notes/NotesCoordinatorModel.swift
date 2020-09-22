@@ -2,7 +2,7 @@
 //  NotesCoordinatorModel.swift
 //  Leknes
 //
-//  Created by Rajesh Billakanti on 18/4/20.
+//  Created by Rajesh Billakanti on 21/9/20.
 //  Copyright © 2020 Rajesh Billakanti. All rights reserved.
 //
 
@@ -18,8 +18,8 @@ struct NotesCoordinatorModel {
         let notesViewModel = NotesViewModel()
         notesViewModel.events.subscribe(onNext: { event in
             switch event {
-            case .navigateToNewNote:
-                let newNoteViewModel = self.createNewNoteViewModel()
+            case .navigateToNewNote(let note, let noteType):
+                let newNoteViewModel = self.createNewNoteViewModel(note, noteType)
                 self.navigationStackActions.onNext(.push(viewModel: newNoteViewModel,
                                                          animated: true))
             }
@@ -27,8 +27,16 @@ struct NotesCoordinatorModel {
         return notesViewModel
     }
 
-    func createNewNoteViewModel() -> NewNoteViewModel {
-        let newNoteViewModel = NewNoteViewModel()
+    func createNewNoteViewModel(_ note: NoteDataModel?,
+                                _ noteType: NoteType) -> NewNoteViewModel {
+        let newNoteViewModel = NewNoteViewModel(noteInfo: note,
+                                                noteType: noteType)
+        newNoteViewModel.events.subscribe(onNext: { event in
+            switch event {
+            case .navigateToNote:
+                self.navigationStackActions.onNext(.pop(animated: true))
+            }
+        }).disposed(by: disposeBag)
         
         return newNoteViewModel
     }

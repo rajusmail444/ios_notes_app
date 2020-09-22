@@ -2,7 +2,7 @@
 //  String+Extension.swift
 //  Leknes
 //
-//  Created by Rajesh Billakanti on 25/4/20.
+//  Created by Rajesh Billakanti on 21/9/20.
 //  Copyright © 2020 Rajesh Billakanti. All rights reserved.
 //
 
@@ -30,7 +30,6 @@ extension String {
     private func fallBack(bundle: Bundle) -> String {
         guard let path = bundle.path(forResource: "en", ofType: "lproj"),
             let englishBundle = Bundle(path: path) else {
-                applicationError("Failed to find localized file for locale: en")
                 return ""
         }
         let localizedString = NSLocalizedString(self, tableName: nil, bundle: englishBundle, value: "", comment: "")

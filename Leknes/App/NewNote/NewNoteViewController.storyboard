@@ -16,24 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiU-DM-vdh" customClass="Welcome" customModule="Leknes" customModuleProvider="target">
-                                <rect key="frame" x="20" y="64" width="374" height="350"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yws-bA-KYj">
+                                <rect key="frame" x="20" y="54" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="noteTitleChanged:forEvent:" destination="0bE-bh-9RK" eventType="editingDidEnd" id="4Z3-QQ-9JS"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ChH-Zm-YWT">
+                                <rect key="frame" x="20" y="98" width="374" height="704"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="gtj-7g-01T"/>
-                                </constraints>
-                            </view>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJa-G1-Fqx">
+                                <rect key="frame" x="20" y="812" width="374" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="PiU-DM-vdh" firstAttribute="leading" secondItem="FPG-E0-XjP" secondAttribute="leading" constant="20" id="Qpn-z8-W6t"/>
-                            <constraint firstItem="PiU-DM-vdh" firstAttribute="top" secondItem="FPG-E0-XjP" secondAttribute="top" constant="20" id="f1j-Ks-3SJ"/>
-                            <constraint firstItem="FPG-E0-XjP" firstAttribute="trailing" secondItem="PiU-DM-vdh" secondAttribute="trailing" constant="20" id="h3m-cr-Hyr"/>
+                            <constraint firstItem="Yws-bA-KYj" firstAttribute="leading" secondItem="FPG-E0-XjP" secondAttribute="leading" constant="20" id="6LL-Qm-xVD"/>
+                            <constraint firstItem="FPG-E0-XjP" firstAttribute="trailing" secondItem="WJa-G1-Fqx" secondAttribute="trailing" constant="20" id="8KH-mC-cFW"/>
+                            <constraint firstItem="WJa-G1-Fqx" firstAttribute="top" secondItem="ChH-Zm-YWT" secondAttribute="bottom" constant="10" id="8dj-So-zqh"/>
+                            <constraint firstItem="FPG-E0-XjP" firstAttribute="trailing" secondItem="Yws-bA-KYj" secondAttribute="trailing" constant="20" id="FXd-4C-rZW"/>
+                            <constraint firstItem="FPG-E0-XjP" firstAttribute="trailing" secondItem="ChH-Zm-YWT" secondAttribute="trailing" constant="20" id="Hc4-K0-XUB"/>
+                            <constraint firstItem="ChH-Zm-YWT" firstAttribute="top" secondItem="Yws-bA-KYj" secondAttribute="bottom" constant="10" id="OuG-UN-ZFh"/>
+                            <constraint firstItem="Yws-bA-KYj" firstAttribute="top" secondItem="FPG-E0-XjP" secondAttribute="top" constant="10" id="Sto-wX-62d"/>
+                            <constraint firstItem="WJa-G1-Fqx" firstAttribute="leading" secondItem="FPG-E0-XjP" secondAttribute="leading" constant="20" id="k74-U1-KHf"/>
+                            <constraint firstItem="FPG-E0-XjP" firstAttribute="bottom" secondItem="WJa-G1-Fqx" secondAttribute="bottom" constant="20" id="xQU-jY-ATr"/>
+                            <constraint firstItem="ChH-Zm-YWT" firstAttribute="leading" secondItem="FPG-E0-XjP" secondAttribute="leading" constant="20" id="yIz-YJ-jck"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FPG-E0-XjP"/>
                     </view>
                     <connections>
-                        <outlet property="welcome" destination="PiU-DM-vdh" id="sEa-ly-QuZ"/>
+                        <outlet property="callToAction" destination="WJa-G1-Fqx" id="doK-N3-rqr"/>
+                        <outlet property="noteDetails" destination="ChH-Zm-YWT" id="UHE-7Z-nuP"/>
+                        <outlet property="noteTitle" destination="Yws-bA-KYj" id="nIw-RE-bc8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILg-3Q-yBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

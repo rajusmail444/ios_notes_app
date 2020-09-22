@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		AFD68DB6F9F250AC5E4C2B96 /* Pods_Leknes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B3F6884DC7CB97268D87C1 /* Pods_Leknes.framework */; };
+		E120004325196064006CB399 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E120004125196064006CB399 /* Notes.xcdatamodeld */; };
+		E12000482519620C006CB399 /* NoteCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12000452519620C006CB399 /* NoteCoreDataHelper.swift */; };
+		E12000492519620C006CB399 /* NoteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12000462519620C006CB399 /* NoteDataModel.swift */; };
+		E120004A2519620C006CB399 /* NoteStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12000472519620C006CB399 /* NoteStorage.swift */; };
 		E1573372244AEA3100B3AAD8 /* NotesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1573371244AEA3100B3AAD8 /* NotesCoordinator.swift */; };
 		E1573374244AEA6800B3AAD8 /* NotesCoordinatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1573373244AEA6800B3AAD8 /* NotesCoordinatorModel.swift */; };
 		E1573376244AEAB500B3AAD8 /* NavigationStackAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1573375244AEAB500B3AAD8 /* NavigationStackAction.swift */; };
 		E1573378244AECEF00B3AAD8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1573377244AECEF00B3AAD8 /* Router.swift */; };
 		E157337A244AED4100B3AAD8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1573379244AED4100B3AAD8 /* UIViewController+Extension.swift */; };
 		E157337C244AEDA400B3AAD8 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157337B244AEDA400B3AAD8 /* ViewControllerProtocol.swift */; };
-		E1573383244B447B00B3AAD8 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1573382244B447B00B3AAD8 /* Welcome.swift */; };
-		E1573385244B448E00B3AAD8 /* Welcome.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1573384244B448E00B3AAD8 /* Welcome.xib */; };
-		E1573388244B469700B3AAD8 /* UIViewLoadNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1573387244B469700B3AAD8 /* UIViewLoadNib.swift */; };
 		E157338B244B4AFA00B3AAD8 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157338A244B4AFA00B3AAD8 /* AppFonts.swift */; };
 		E157338D244B4C3100B3AAD8 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157338C244B4C3100B3AAD8 /* ColorTheme.swift */; };
-		E157338F244B511600B3AAD8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157338E244B511600B3AAD8 /* UIView+Extension.swift */; };
 		E17345402445E3DA007CD373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173453F2445E3DA007CD373 /* AppDelegate.swift */; };
 		E17345422445E3DA007CD373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17345412445E3DA007CD373 /* SceneDelegate.swift */; };
 		E17345442445E3DA007CD373 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17345432445E3DA007CD373 /* MainViewController.swift */; };
@@ -29,16 +29,15 @@
 		E1806ED7244DE79600296D82 /* ProfileViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1806ED6244DE79600296D82 /* ProfileViewModelSpec.swift */; };
 		E1806EDA244DE88D00296D82 /* ObservableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1806ED9244DE88D00296D82 /* ObservableHelpers.swift */; };
 		E18337F2244C673000F5C780 /* LeknesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18337F1244C673000F5C780 /* LeknesTests.swift */; };
-		E1927C612452EA0700C52BBA /* LeknesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1927C602452EA0700C52BBA /* LeknesUITests.swift */; };
+		E1927C612452EA0700C52BBA /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1927C602452EA0700C52BBA /* NotesUITests.swift */; };
 		E1927C682452EA5000C52BBA /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1927C592452E9C300C52BBA /* libTestLib.a */; };
 		E1927C6A2452EBFE00C52BBA /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1927C572452E9C300C52BBA /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E1927C6C2452ECC300C52BBA /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1927C6B2452ECC300C52BBA /* EarlGrey.swift */; };
+		E1AE585A251A12E300901DC7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AE5859251A12E300901DC7 /* Date+Extension.swift */; };
+		E1AE585D251A186500901DC7 /* CommonEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AE585C251A186500901DC7 /* CommonEnums.swift */; };
+		E1AE585F251A217000901DC7 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AE585E251A217000901DC7 /* UITextView+Extension.swift */; };
 		E1AEE716245312370082514F /* EarlGreyHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE715245312370082514F /* EarlGreyHelpers.swift */; };
-		E1AEE71D245321140082514F /* LeknesDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE71C245321140082514F /* LeknesDateFormatter.swift */; };
-		E1AEE71E245321930082514F /* LeknesDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE71C245321140082514F /* LeknesDateFormatter.swift */; };
 		E1AEE721245401040082514F /* BaseJourneyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE720245401040082514F /* BaseJourneyTest.swift */; };
-		E1AEE724245401F20082514F /* ApplicationErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE723245401F20082514F /* ApplicationErrorReporter.swift */; };
-		E1AEE725245403940082514F /* ApplicationErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE723245401F20082514F /* ApplicationErrorReporter.swift */; };
 		E1AEE72F245436FC0082514F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE72E245436FC0082514F /* String+Extension.swift */; };
 		E1B5A4E624483BF900F67BD7 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A4E524483BF900F67BD7 /* MainViewCoordinator.swift */; };
 		E1B5A4E824483D9300F67BD7 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A4E724483D9300F67BD7 /* NotesViewController.swift */; };
@@ -117,19 +116,19 @@
 		7AAEC2C26CCF334A43160867 /* Pods-Leknes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leknes.debug.xcconfig"; path = "Target Support Files/Pods-Leknes/Pods-Leknes.debug.xcconfig"; sourceTree = "<group>"; };
 		7F65442E946CC175088ED293 /* Pods-Leknes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leknes.release.xcconfig"; path = "Target Support Files/Pods-Leknes/Pods-Leknes.release.xcconfig"; sourceTree = "<group>"; };
 		CF52052EF8135D726566BC25 /* Pods-LeknesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeknesTests.release.xcconfig"; path = "Target Support Files/Pods-LeknesTests/Pods-LeknesTests.release.xcconfig"; sourceTree = "<group>"; };
+		E120004225196064006CB399 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		E12000452519620C006CB399 /* NoteCoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCoreDataHelper.swift; sourceTree = "<group>"; };
+		E12000462519620C006CB399 /* NoteDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDataModel.swift; sourceTree = "<group>"; };
+		E12000472519620C006CB399 /* NoteStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteStorage.swift; sourceTree = "<group>"; };
 		E1573371244AEA3100B3AAD8 /* NotesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCoordinator.swift; sourceTree = "<group>"; };
 		E1573373244AEA6800B3AAD8 /* NotesCoordinatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCoordinatorModel.swift; sourceTree = "<group>"; };
 		E1573375244AEAB500B3AAD8 /* NavigationStackAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackAction.swift; sourceTree = "<group>"; };
 		E1573377244AECEF00B3AAD8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E1573379244AED4100B3AAD8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E157337B244AEDA400B3AAD8 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
-		E1573382244B447B00B3AAD8 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
-		E1573384244B448E00B3AAD8 /* Welcome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Welcome.xib; sourceTree = "<group>"; };
-		E1573387244B469700B3AAD8 /* UIViewLoadNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewLoadNib.swift; sourceTree = "<group>"; };
 		E157338A244B4AFA00B3AAD8 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
 		E157338C244B4C3100B3AAD8 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
-		E157338E244B511600B3AAD8 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		E173453C2445E3DA007CD373 /* Leknes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leknes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E173453C2445E3DA007CD373 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E173453F2445E3DA007CD373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E17345412445E3DA007CD373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E17345432445E3DA007CD373 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -144,14 +143,15 @@
 		E18337F3244C673000F5C780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1927C4A2452E9C300C52BBA /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 		E1927C5E2452EA0700C52BBA /* LeknesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeknesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1927C602452EA0700C52BBA /* LeknesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeknesUITests.swift; sourceTree = "<group>"; };
+		E1927C602452EA0700C52BBA /* NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITests.swift; sourceTree = "<group>"; };
 		E1927C622452EA0700C52BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1927C6B2452ECC300C52BBA /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		E1927C6D2452EF6F00C52BBA /* EG2Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EG2Header.h; sourceTree = "<group>"; };
+		E1AE5859251A12E300901DC7 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		E1AE585C251A186500901DC7 /* CommonEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnums.swift; sourceTree = "<group>"; };
+		E1AE585E251A217000901DC7 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
 		E1AEE715245312370082514F /* EarlGreyHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyHelpers.swift; sourceTree = "<group>"; };
-		E1AEE71C245321140082514F /* LeknesDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeknesDateFormatter.swift; sourceTree = "<group>"; };
 		E1AEE720245401040082514F /* BaseJourneyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJourneyTest.swift; sourceTree = "<group>"; };
-		E1AEE723245401F20082514F /* ApplicationErrorReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationErrorReporter.swift; sourceTree = "<group>"; };
 		E1AEE72E245436FC0082514F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E1B5A4E524483BF900F67BD7 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
 		E1B5A4E724483D9300F67BD7 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
@@ -213,13 +213,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E12000402519601D006CB399 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				E120004125196064006CB399 /* Notes.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		E1200044251960D0006CB399 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				E12000452519620C006CB399 /* NoteCoreDataHelper.swift */,
+				E12000462519620C006CB399 /* NoteDataModel.swift */,
+				E12000472519620C006CB399 /* NoteStorage.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 		E157336C244AE82C00B3AAD8 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				E1AE585B251A183200901DC7 /* Enum */,
 				E1AEE729245436D30082514F /* Extensions */,
-				E1AEE71B245320F70082514F /* Date */,
 				E1573389244B4ACE00B3AAD8 /* Theme */,
-				E1573386244B467D00B3AAD8 /* Nib */,
 				E157337E244AF1DA00B3AAD8 /* Navigation */,
 				E157337D244AF1AF00B3AAD8 /* View */,
 			);
@@ -266,24 +283,6 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		E1573381244B446100B3AAD8 /* Nib */ = {
-			isa = PBXGroup;
-			children = (
-				E1573382244B447B00B3AAD8 /* Welcome.swift */,
-				E1573384244B448E00B3AAD8 /* Welcome.xib */,
-			);
-			path = Nib;
-			sourceTree = "<group>";
-		};
-		E1573386244B467D00B3AAD8 /* Nib */ = {
-			isa = PBXGroup;
-			children = (
-				E1573387244B469700B3AAD8 /* UIViewLoadNib.swift */,
-				E157338E244B511600B3AAD8 /* UIView+Extension.swift */,
-			);
-			path = Nib;
-			sourceTree = "<group>";
-		};
 		E1573389244B4ACE00B3AAD8 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,7 +308,7 @@
 		E173453D2445E3DA007CD373 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E173453C2445E3DA007CD373 /* Leknes.app */,
+				E173453C2445E3DA007CD373 /* Notes.app */,
 				E18337EF244C673000F5C780 /* LeknesTests.xctest */,
 				E1927C5E2452EA0700C52BBA /* LeknesUITests.xctest */,
 			);
@@ -332,12 +331,12 @@
 			path = Leknes;
 			sourceTree = "<group>";
 		};
-		E1806ED5244DE44300296D82 /* Profile */ = {
+		E1806ED5244DE44300296D82 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
 				E1806ED6244DE79600296D82 /* ProfileViewModelSpec.swift */,
 			);
-			path = Profile;
+			path = Notes;
 			sourceTree = "<group>";
 		};
 		E1806ED8244DE87300296D82 /* Utilities */ = {
@@ -352,7 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				E1806ED8244DE87300296D82 /* Utilities */,
-				E1806ED5244DE44300296D82 /* Profile */,
+				E1806ED5244DE44300296D82 /* Notes */,
 				E18337F1244C673000F5C780 /* LeknesTests.swift */,
 				E18337F3244C673000F5C780 /* Info.plist */,
 			);
@@ -374,18 +373,18 @@
 			isa = PBXGroup;
 			children = (
 				E1AEE71F245400E20082514F /* EarlGreyHelper */,
-				E1927C602452EA0700C52BBA /* LeknesUITests.swift */,
+				E1927C602452EA0700C52BBA /* NotesUITests.swift */,
 				E1927C622452EA0700C52BBA /* Info.plist */,
 			);
 			path = LeknesUITests;
 			sourceTree = "<group>";
 		};
-		E1AEE71B245320F70082514F /* Date */ = {
+		E1AE585B251A183200901DC7 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				E1AEE71C245321140082514F /* LeknesDateFormatter.swift */,
+				E1AE585C251A186500901DC7 /* CommonEnums.swift */,
 			);
-			path = Date;
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		E1AEE71F245400E20082514F /* EarlGreyHelper */ = {
@@ -399,18 +398,12 @@
 			path = EarlGreyHelper;
 			sourceTree = "<group>";
 		};
-		E1AEE722245401D10082514F /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				E1AEE723245401F20082514F /* ApplicationErrorReporter.swift */,
-			);
-			path = Error;
-			sourceTree = "<group>";
-		};
 		E1AEE729245436D30082514F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				E1AEE72E245436FC0082514F /* String+Extension.swift */,
+				E1AE5859251A12E300901DC7 /* Date+Extension.swift */,
+				E1AE585E251A217000901DC7 /* UITextView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -418,8 +411,8 @@
 		E1B5A4E424483BD600F67BD7 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E1AEE722245401D10082514F /* Error */,
-				E1573381244B446100B3AAD8 /* Nib */,
+				E1200044251960D0006CB399 /* DB */,
+				E12000402519601D006CB399 /* CoreDataModel */,
 				E1573370244AE9F200B3AAD8 /* NewNote */,
 				E157336F244AE9EB00B3AAD8 /* Notes */,
 				E157336C244AE82C00B3AAD8 /* Utilities */,
@@ -456,7 +449,7 @@
 			);
 			name = Leknes;
 			productName = Leknes;
-			productReference = E173453C2445E3DA007CD373 /* Leknes.app */;
+			productReference = E173453C2445E3DA007CD373 /* Notes.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E18337EE244C673000F5C780 /* LeknesTests */ = {
@@ -584,7 +577,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1573385244B448E00B3AAD8 /* Welcome.xib in Resources */,
 				E1B5A4EA24483DA500F67BD7 /* NotesViewController.storyboard in Resources */,
 				E173454C2445E3DD007CD373 /* LaunchScreen.storyboard in Resources */,
 				E17345492445E3DD007CD373 /* Assets.xcassets in Resources */,
@@ -718,24 +710,26 @@
 				E1B5A4E624483BF900F67BD7 /* MainViewCoordinator.swift in Sources */,
 				E17345442445E3DA007CD373 /* MainViewController.swift in Sources */,
 				E17345402445E3DA007CD373 /* AppDelegate.swift in Sources */,
-				E1AEE724245401F20082514F /* ApplicationErrorReporter.swift in Sources */,
 				E157337A244AED4100B3AAD8 /* UIViewController+Extension.swift in Sources */,
-				E1573383244B447B00B3AAD8 /* Welcome.swift in Sources */,
+				E1AE585D251A186500901DC7 /* CommonEnums.swift in Sources */,
 				E1AEE72F245436FC0082514F /* String+Extension.swift in Sources */,
+				E120004A2519620C006CB399 /* NoteStorage.swift in Sources */,
+				E1AE585A251A12E300901DC7 /* Date+Extension.swift in Sources */,
 				E1573374244AEA6800B3AAD8 /* NotesCoordinatorModel.swift in Sources */,
 				E157338D244B4C3100B3AAD8 /* ColorTheme.swift in Sources */,
 				E1B5A4F22448432600F67BD7 /* NewNoteViewModel.swift in Sources */,
 				E17345422445E3DA007CD373 /* SceneDelegate.swift in Sources */,
+				E1AE585F251A217000901DC7 /* UITextView+Extension.swift in Sources */,
+				E120004325196064006CB399 /* Notes.xcdatamodeld in Sources */,
+				E12000482519620C006CB399 /* NoteCoreDataHelper.swift in Sources */,
 				E157337C244AEDA400B3AAD8 /* ViewControllerProtocol.swift in Sources */,
+				E12000492519620C006CB399 /* NoteDataModel.swift in Sources */,
 				E1B5A4EE2448430700F67BD7 /* NewNoteViewController.swift in Sources */,
 				E1B5A4E824483D9300F67BD7 /* NotesViewController.swift in Sources */,
 				E157338B244B4AFA00B3AAD8 /* AppFonts.swift in Sources */,
 				E1573376244AEAB500B3AAD8 /* NavigationStackAction.swift in Sources */,
 				E1573378244AECEF00B3AAD8 /* Router.swift in Sources */,
-				E1AEE71D245321140082514F /* LeknesDateFormatter.swift in Sources */,
 				E1B5A4EC244842EB00F67BD7 /* NotesViewModel.swift in Sources */,
-				E1573388244B469700B3AAD8 /* UIViewLoadNib.swift in Sources */,
-				E157338F244B511600B3AAD8 /* UIView+Extension.swift in Sources */,
 				E1573372244AEA3100B3AAD8 /* NotesCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -754,11 +748,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1AEE71E245321930082514F /* LeknesDateFormatter.swift in Sources */,
 				E1AEE721245401040082514F /* BaseJourneyTest.swift in Sources */,
-				E1AEE725245403940082514F /* ApplicationErrorReporter.swift in Sources */,
 				E1927C6C2452ECC300C52BBA /* EarlGrey.swift in Sources */,
-				E1927C612452EA0700C52BBA /* LeknesUITests.swift in Sources */,
+				E1927C612452EA0700C52BBA /* NotesUITests.swift in Sources */,
 				E1AEE716245312370082514F /* EarlGreyHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -858,7 +850,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -913,7 +905,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -934,8 +926,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rajusmail444.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajusmail444.realtime.dev;
+				PRODUCT_NAME = Notes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -952,8 +944,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rajusmail444.dev;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rajusmail444.realtime.dev;
+				PRODUCT_NAME = Notes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -976,7 +968,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leknes.app/Leknes";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes.app/Notes";
 			};
 			name = Debug;
 		};
@@ -997,7 +989,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leknes.app/Leknes";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notes.app/Notes";
 			};
 			name = Release;
 		};
@@ -1085,6 +1077,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E120004125196064006CB399 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E120004225196064006CB399 /* Notes.xcdatamodel */,
+			);
+			currentVersion = E120004225196064006CB399 /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E17345342445E3DA007CD373 /* Project object */;
 }

@@ -16,33 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LqF-5e-fnF" customClass="Welcome" customModule="Leknes" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="350"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="haq-wo-BUv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="R2t-jh-qfs"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWR-Sd-geI">
-                                <rect key="frame" x="20" y="444" width="374" height="30"/>
-                                <state key="normal" title="More_Details"/>
-                            </button>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteTitleCell" textLabel="W2K-mu-Ebl" style="IBUITableViewCellStyleDefault" id="y4D-9j-wAx">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y4D-9j-wAx" id="bnQ-Qs-kn4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W2K-mu-Ebl">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="jiA-66-qPr" firstAttribute="trailing" secondItem="LqF-5e-fnF" secondAttribute="trailing" id="4Ia-r2-j3P"/>
-                            <constraint firstItem="iWR-Sd-geI" firstAttribute="leading" secondItem="jiA-66-qPr" secondAttribute="leading" constant="20" id="7FQ-pq-dbe"/>
-                            <constraint firstItem="LqF-5e-fnF" firstAttribute="top" secondItem="jiA-66-qPr" secondAttribute="top" id="8AR-Wi-NMe"/>
-                            <constraint firstItem="LqF-5e-fnF" firstAttribute="leading" secondItem="jiA-66-qPr" secondAttribute="leading" id="NMv-5e-fTF"/>
-                            <constraint firstItem="jiA-66-qPr" firstAttribute="trailing" secondItem="iWR-Sd-geI" secondAttribute="trailing" constant="20" id="VCl-Fj-AgB"/>
-                            <constraint firstItem="iWR-Sd-geI" firstAttribute="top" secondItem="LqF-5e-fnF" secondAttribute="bottom" constant="50" id="btR-8U-C9q"/>
+                            <constraint firstItem="haq-wo-BUv" firstAttribute="leading" secondItem="jiA-66-qPr" secondAttribute="leading" id="Amr-OV-mCH"/>
+                            <constraint firstItem="jiA-66-qPr" firstAttribute="trailing" secondItem="haq-wo-BUv" secondAttribute="trailing" id="EVY-LO-i7T"/>
+                            <constraint firstItem="jiA-66-qPr" firstAttribute="bottom" secondItem="haq-wo-BUv" secondAttribute="bottom" id="MUD-Bc-kK8"/>
+                            <constraint firstItem="haq-wo-BUv" firstAttribute="top" secondItem="jiA-66-qPr" secondAttribute="top" id="hBP-vu-JOn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jiA-66-qPr"/>
                     </view>
                     <navigationItem key="navigationItem" id="zg7-gJ-MkF"/>
                     <connections>
-                        <outlet property="details" destination="iWR-Sd-geI" id="kdN-28-c9R"/>
-                        <outlet property="welcome" destination="LqF-5e-fnF" id="RDd-3p-MEh"/>
+                        <outlet property="tableView" destination="haq-wo-BUv" id="j7J-nA-gD6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSV-ML-nhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

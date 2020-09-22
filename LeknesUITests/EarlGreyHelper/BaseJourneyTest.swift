@@ -1,8 +1,8 @@
 //
 //  BaseJourneyTest.swift
-//  LeknesUITests
+//  NotesUITests
 //
-//  Created by Rajesh Billakanti on 25/4/20.
+//  Created by Rajesh Billakanti on 21/9/20.
 //  Copyright © 2020 Rajesh Billakanti. All rights reserved.
 //
 

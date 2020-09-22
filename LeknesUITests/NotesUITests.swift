@@ -1,14 +1,14 @@
 //
-//  LeknesUITests.swift
-//  LeknesUITests
+//  NotesUITests.swift
+//  NotesUITests
 //
-//  Created by Rajesh Billakanti on 24/4/20.
+//  Created by Rajesh Billakanti on 21/9/20.
 //  Copyright © 2020 Rajesh Billakanti. All rights reserved.
 //
 
 import XCTest
 
-class LeknesUITests: BaseJourneyTest {
+class NotesUITests: BaseJourneyTest {
     func testExample() {
         EarlGrey.selectElement(with: grey_keyWindow())
             .perform(grey_tap())
@@ -16,18 +16,16 @@ class LeknesUITests: BaseJourneyTest {
 
     func test_journey() {
         navigateToHome()
-        navigateToDetails()
+        navigateToAddNote()
         navigateToProfile()
     }
 
     func navigateToHome() {
-        tapElement(text: "main_tab_Home".localized())
-        assertVisibleLabel(text: "Welcome_to_Leknes".localized(),
+        assertVisibleLabel(text: "notes_title".localized(),
                            inside: "welcome_home")
-        waitForUIToAppear()
     }
-    func navigateToDetails() {
-        tapElement(text: "Details")
+    func navigateToAddNote() {
+        tapBarButton(accessibilityID: "add_note")
         waitForUIToAppear()
         tapBackButton(accessibilityLabel: "back")
     }
@@ -37,13 +35,4 @@ class LeknesUITests: BaseJourneyTest {
                            inside: "welcome_profile")
         waitForUIToAppear()
     }
-
-//    func testLaunchPerformance() {
-//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-//            // This measures how long it takes to launch your application.
-//            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-//                XCUIApplication().launch()
-//            }
-//        }
-//    }
 }

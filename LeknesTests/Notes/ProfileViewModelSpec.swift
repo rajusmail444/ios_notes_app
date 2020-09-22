@@ -1,8 +1,8 @@
 //
-//  ProfileViewModelSpec.swift
+//  NotesViewModelSpec.swift
 //  LeknesTests
 //
-//  Created by Rajesh Billakanti on 20/4/20.
+//  Created by Rajesh Billakanti on 21/9/20.
 //  Copyright © 2020 Rajesh Billakanti. All rights reserved.
 //
 
@@ -13,27 +13,30 @@ import Nimble
 import RxSwift
 import RxTest
 
-@testable import Leknes
+@testable import Notes
 
-class ProfileViewModelSpec: QuickSpec {
+class NotesViewModelSpec: QuickSpec {
     override func spec() {
-        var subject: ProfileViewModel!
+        var subject: NotesViewModel!
         var disposeBag: DisposeBag!
-        describe("ProfileViewModel") {
+        describe("NotesViewModel") {
             beforeEach {
                 disposeBag = DisposeBag()
             }
             context("when to display Lunch menu") {
-                var actualEvent: ProfileViewModelEvent?
-                var expectedEvent: ProfileViewModelEvent?
+                var actualEvent: NotesViewModelEvent?
+                var expectedEvent: NotesViewModelEvent?
                 beforeEach {
-                    subject = ProfileViewModel()
+                    subject = NotesViewModel()
                     actualEvent = ObservableHelpers
                         .latestValueFrom(observable: subject.events,
                                          disposeBag: disposeBag) {
-                                            subject.detailsButtonTapped.onNext(())
+                                            subject.addButtonTapped.onNext(())
                     }
-                    expectedEvent = .navigateToDetails
+                    expectedEvent = .navigateToNewNote(NoteDataModel(noteTitle: "",
+                                                                     noteText: "",
+                                                                     noteTimeStamp: Date().toSeconds()),
+                                                       .AddNote)
                 }
                 it("should display page title as Lunch") {
                     expect(expectedEvent).to(equal(actualEvent))
