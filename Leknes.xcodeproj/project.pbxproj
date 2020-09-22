@@ -29,15 +29,9 @@
 		E1806ED7244DE79600296D82 /* ProfileViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1806ED6244DE79600296D82 /* ProfileViewModelSpec.swift */; };
 		E1806EDA244DE88D00296D82 /* ObservableHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1806ED9244DE88D00296D82 /* ObservableHelpers.swift */; };
 		E18337F2244C673000F5C780 /* LeknesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18337F1244C673000F5C780 /* LeknesTests.swift */; };
-		E1927C612452EA0700C52BBA /* NotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1927C602452EA0700C52BBA /* NotesUITests.swift */; };
-		E1927C682452EA5000C52BBA /* libTestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1927C592452E9C300C52BBA /* libTestLib.a */; };
-		E1927C6A2452EBFE00C52BBA /* AppFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1927C572452E9C300C52BBA /* AppFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		E1927C6C2452ECC300C52BBA /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1927C6B2452ECC300C52BBA /* EarlGrey.swift */; };
 		E1AE585A251A12E300901DC7 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AE5859251A12E300901DC7 /* Date+Extension.swift */; };
 		E1AE585D251A186500901DC7 /* CommonEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AE585C251A186500901DC7 /* CommonEnums.swift */; };
 		E1AE585F251A217000901DC7 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AE585E251A217000901DC7 /* UITextView+Extension.swift */; };
-		E1AEE716245312370082514F /* EarlGreyHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE715245312370082514F /* EarlGreyHelpers.swift */; };
-		E1AEE721245401040082514F /* BaseJourneyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE720245401040082514F /* BaseJourneyTest.swift */; };
 		E1AEE72F245436FC0082514F /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AEE72E245436FC0082514F /* String+Extension.swift */; };
 		E1B5A4E624483BF900F67BD7 /* MainViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A4E524483BF900F67BD7 /* MainViewCoordinator.swift */; };
 		E1B5A4E824483D9300F67BD7 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A4E724483D9300F67BD7 /* NotesViewController.swift */; };
@@ -47,48 +41,40 @@
 		E1B5A4F02448431800F67BD7 /* NewNoteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B5A4EF2448431800F67BD7 /* NewNoteViewController.storyboard */; };
 		E1B5A4F22448432600F67BD7 /* NewNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B5A4F12448432600F67BD7 /* NewNoteViewModel.swift */; };
 		E1D7226E2454458200D73234 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1D722702454458200D73234 /* Localizable.strings */; };
-		E1D7227424544F6000D73234 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1D722702454458200D73234 /* Localizable.strings */; };
 		E1D7227524544F6100D73234 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1D722702454458200D73234 /* Localizable.strings */; };
 		FE90E2631804226B2B523BDA /* Pods_LeknesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CA69911A01C12B189F0D24 /* Pods_LeknesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E18337F4244C673000F5C780 /* PBXContainerItemProxy */ = {
+		E10174E2251ABBA5008EABA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E17345342445E3DA007CD373 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E173453B2445E3DA007CD373;
-			remoteInfo = Leknes;
-		};
-		E1927C522452E9C300C52BBA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E1927C4A2452E9C300C52BBA /* EarlGrey.xcodeproj */;
+			containerPortal = E10174DA251ABBA5008EABA8 /* EarlGrey.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FD62395120F56A9700049E81;
 			remoteInfo = CommonLib;
 		};
-		E1927C542452E9C300C52BBA /* PBXContainerItemProxy */ = {
+		E10174E4251ABBA5008EABA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E1927C4A2452E9C300C52BBA /* EarlGrey.xcodeproj */;
+			containerPortal = E10174DA251ABBA5008EABA8 /* EarlGrey.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FDF9E03520F82D090005DCF2;
 			remoteInfo = UILib;
 		};
-		E1927C562452E9C300C52BBA /* PBXContainerItemProxy */ = {
+		E10174E6251ABBA5008EABA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E1927C4A2452E9C300C52BBA /* EarlGrey.xcodeproj */;
+			containerPortal = E10174DA251ABBA5008EABA8 /* EarlGrey.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FD623A4920F957BE00049E81;
 			remoteInfo = AppFramework;
 		};
-		E1927C582452E9C300C52BBA /* PBXContainerItemProxy */ = {
+		E10174E8251ABBA5008EABA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E1927C4A2452E9C300C52BBA /* EarlGrey.xcodeproj */;
+			containerPortal = E10174DA251ABBA5008EABA8 /* EarlGrey.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = FD5048F820FB225100261CBE;
 			remoteInfo = TestLib;
 		};
-		E1927C632452EA0700C52BBA /* PBXContainerItemProxy */ = {
+		E18337F4244C673000F5C780 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E17345342445E3DA007CD373 /* Project object */;
 			proxyType = 1;
@@ -97,25 +83,13 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		E1927C692452EB0100C52BBA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(TARGET_BUILD_DIR)/../../Leknes.app/Frameworks";
-			dstSubfolderSpec = 0;
-			files = (
-				E1927C6A2452EBFE00C52BBA /* AppFramework.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		09B3F6884DC7CB97268D87C1 /* Pods_Leknes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leknes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CA69911A01C12B189F0D24 /* Pods_LeknesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeknesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AAEC2C26CCF334A43160867 /* Pods-Leknes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leknes.debug.xcconfig"; path = "Target Support Files/Pods-Leknes/Pods-Leknes.debug.xcconfig"; sourceTree = "<group>"; };
 		7F65442E946CC175088ED293 /* Pods-Leknes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leknes.release.xcconfig"; path = "Target Support Files/Pods-Leknes/Pods-Leknes.release.xcconfig"; sourceTree = "<group>"; };
 		CF52052EF8135D726566BC25 /* Pods-LeknesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeknesTests.release.xcconfig"; path = "Target Support Files/Pods-LeknesTests/Pods-LeknesTests.release.xcconfig"; sourceTree = "<group>"; };
+		E10174DA251ABBA5008EABA8 /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = ../EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
 		E120004225196064006CB399 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		E12000452519620C006CB399 /* NoteCoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCoreDataHelper.swift; sourceTree = "<group>"; };
 		E12000462519620C006CB399 /* NoteDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDataModel.swift; sourceTree = "<group>"; };
@@ -141,17 +115,9 @@
 		E18337EF244C673000F5C780 /* LeknesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeknesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E18337F1244C673000F5C780 /* LeknesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeknesTests.swift; sourceTree = "<group>"; };
 		E18337F3244C673000F5C780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1927C4A2452E9C300C52BBA /* EarlGrey.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EarlGrey.xcodeproj; path = EarlGrey/EarlGrey.xcodeproj; sourceTree = "<group>"; };
-		E1927C5E2452EA0700C52BBA /* LeknesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeknesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1927C602452EA0700C52BBA /* NotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesUITests.swift; sourceTree = "<group>"; };
-		E1927C622452EA0700C52BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1927C6B2452ECC300C52BBA /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
-		E1927C6D2452EF6F00C52BBA /* EG2Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EG2Header.h; sourceTree = "<group>"; };
 		E1AE5859251A12E300901DC7 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E1AE585C251A186500901DC7 /* CommonEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnums.swift; sourceTree = "<group>"; };
 		E1AE585E251A217000901DC7 /* UITextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
-		E1AEE715245312370082514F /* EarlGreyHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGreyHelpers.swift; sourceTree = "<group>"; };
-		E1AEE720245401040082514F /* BaseJourneyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseJourneyTest.swift; sourceTree = "<group>"; };
 		E1AEE72E245436FC0082514F /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E1B5A4E524483BF900F67BD7 /* MainViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCoordinator.swift; sourceTree = "<group>"; };
 		E1B5A4E724483D9300F67BD7 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
@@ -182,14 +148,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1927C5B2452EA0700C52BBA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1927C682452EA5000C52BBA /* libTestLib.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -211,6 +169,17 @@
 				CF52052EF8135D726566BC25 /* Pods-LeknesTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E10174DB251ABBA5008EABA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E10174E3251ABBA5008EABA8 /* libCommonLib.a */,
+				E10174E5251ABBA5008EABA8 /* libUILib.a */,
+				E10174E7251ABBA5008EABA8 /* AppFramework.framework */,
+				E10174E9251ABBA5008EABA8 /* libTestLib.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E12000402519601D006CB399 /* CoreDataModel */ = {
@@ -295,10 +264,9 @@
 		E17345332445E3DA007CD373 = {
 			isa = PBXGroup;
 			children = (
-				E1927C4A2452E9C300C52BBA /* EarlGrey.xcodeproj */,
+				E10174DA251ABBA5008EABA8 /* EarlGrey.xcodeproj */,
 				E173453E2445E3DA007CD373 /* Leknes */,
 				E18337F0244C673000F5C780 /* LeknesTests */,
-				E1927C5F2452EA0700C52BBA /* LeknesUITests */,
 				E173453D2445E3DA007CD373 /* Products */,
 				83D9D13335F903C2EE7CAFA9 /* Pods */,
 				27D5AA6F6D7F67D1FD5AFD48 /* Frameworks */,
@@ -310,7 +278,6 @@
 			children = (
 				E173453C2445E3DA007CD373 /* Notes.app */,
 				E18337EF244C673000F5C780 /* LeknesTests.xctest */,
-				E1927C5E2452EA0700C52BBA /* LeknesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,44 +325,12 @@
 			path = LeknesTests;
 			sourceTree = "<group>";
 		};
-		E1927C4B2452E9C300C52BBA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E1927C532452E9C300C52BBA /* libCommonLib.a */,
-				E1927C552452E9C300C52BBA /* libUILib.a */,
-				E1927C572452E9C300C52BBA /* AppFramework.framework */,
-				E1927C592452E9C300C52BBA /* libTestLib.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E1927C5F2452EA0700C52BBA /* LeknesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E1AEE71F245400E20082514F /* EarlGreyHelper */,
-				E1927C602452EA0700C52BBA /* NotesUITests.swift */,
-				E1927C622452EA0700C52BBA /* Info.plist */,
-			);
-			path = LeknesUITests;
-			sourceTree = "<group>";
-		};
 		E1AE585B251A183200901DC7 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
 				E1AE585C251A186500901DC7 /* CommonEnums.swift */,
 			);
 			path = Enum;
-			sourceTree = "<group>";
-		};
-		E1AEE71F245400E20082514F /* EarlGreyHelper */ = {
-			isa = PBXGroup;
-			children = (
-				E1927C6D2452EF6F00C52BBA /* EG2Header.h */,
-				E1AEE715245312370082514F /* EarlGreyHelpers.swift */,
-				E1927C6B2452ECC300C52BBA /* EarlGrey.swift */,
-				E1AEE720245401040082514F /* BaseJourneyTest.swift */,
-			);
-			path = EarlGreyHelper;
 			sourceTree = "<group>";
 		};
 		E1AEE729245436D30082514F /* Extensions */ = {
@@ -472,25 +407,6 @@
 			productReference = E18337EF244C673000F5C780 /* LeknesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E1927C5D2452EA0700C52BBA /* LeknesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E1927C652452EA0700C52BBA /* Build configuration list for PBXNativeTarget "LeknesUITests" */;
-			buildPhases = (
-				E1927C5A2452EA0700C52BBA /* Sources */,
-				E1927C5B2452EA0700C52BBA /* Frameworks */,
-				E1927C5C2452EA0700C52BBA /* Resources */,
-				E1927C692452EB0100C52BBA /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E1927C642452EA0700C52BBA /* PBXTargetDependency */,
-			);
-			name = LeknesUITests;
-			productName = LeknesUITests;
-			productReference = E1927C5E2452EA0700C52BBA /* LeknesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -505,10 +421,6 @@
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					E18337EE244C673000F5C780 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = E173453B2445E3DA007CD373;
-					};
-					E1927C5D2452EA0700C52BBA = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = E173453B2445E3DA007CD373;
 					};
@@ -528,46 +440,45 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = E1927C4B2452E9C300C52BBA /* Products */;
-					ProjectRef = E1927C4A2452E9C300C52BBA /* EarlGrey.xcodeproj */;
+					ProductGroup = E10174DB251ABBA5008EABA8 /* Products */;
+					ProjectRef = E10174DA251ABBA5008EABA8 /* EarlGrey.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
 				E173453B2445E3DA007CD373 /* Leknes */,
 				E18337EE244C673000F5C780 /* LeknesTests */,
-				E1927C5D2452EA0700C52BBA /* LeknesUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E1927C532452E9C300C52BBA /* libCommonLib.a */ = {
+		E10174E3251ABBA5008EABA8 /* libCommonLib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCommonLib.a;
-			remoteRef = E1927C522452E9C300C52BBA /* PBXContainerItemProxy */;
+			remoteRef = E10174E2251ABBA5008EABA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E1927C552452E9C300C52BBA /* libUILib.a */ = {
+		E10174E5251ABBA5008EABA8 /* libUILib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libUILib.a;
-			remoteRef = E1927C542452E9C300C52BBA /* PBXContainerItemProxy */;
+			remoteRef = E10174E4251ABBA5008EABA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E1927C572452E9C300C52BBA /* AppFramework.framework */ = {
+		E10174E7251ABBA5008EABA8 /* AppFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AppFramework.framework;
-			remoteRef = E1927C562452E9C300C52BBA /* PBXContainerItemProxy */;
+			remoteRef = E10174E6251ABBA5008EABA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E1927C592452E9C300C52BBA /* libTestLib.a */ = {
+		E10174E9251ABBA5008EABA8 /* libTestLib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libTestLib.a;
-			remoteRef = E1927C582452E9C300C52BBA /* PBXContainerItemProxy */;
+			remoteRef = E10174E8251ABBA5008EABA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -591,14 +502,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D7227524544F6100D73234 /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1927C5C2452EA0700C52BBA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1D7227424544F6000D73234 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,17 +647,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1927C5A2452EA0700C52BBA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1AEE721245401040082514F /* BaseJourneyTest.swift in Sources */,
-				E1927C6C2452ECC300C52BBA /* EarlGrey.swift in Sources */,
-				E1927C612452EA0700C52BBA /* NotesUITests.swift in Sources */,
-				E1AEE716245312370082514F /* EarlGreyHelpers.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -762,11 +654,6 @@
 			isa = PBXTargetDependency;
 			target = E173453B2445E3DA007CD373 /* Leknes */;
 			targetProxy = E18337F4244C673000F5C780 /* PBXContainerItemProxy */;
-		};
-		E1927C642452EA0700C52BBA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E173453B2445E3DA007CD373 /* Leknes */;
-			targetProxy = E1927C632452EA0700C52BBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -993,50 +880,6 @@
 			};
 			name = Release;
 		};
-		E1927C662452EA0700C52BBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LeknesUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.howdy.buttercup.devsample.LeknesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = LeknesUITests/EarlGreyHelper/EG2Header.h;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Leknes;
-				USER_HEADER_SEARCH_PATHS = "EarlGrey/**";
-			};
-			name = Debug;
-		};
-		E1927C672452EA0700C52BBA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LeknesUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.howdy.buttercup.devsample.LeknesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = LeknesUITests/EarlGreyHelper/EG2Header.h;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Leknes;
-				USER_HEADER_SEARCH_PATHS = "EarlGrey/**";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1063,15 +906,6 @@
 			buildConfigurations = (
 				E18337F6244C673000F5C780 /* Debug */,
 				E18337F7244C673000F5C780 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E1927C652452EA0700C52BBA /* Build configuration list for PBXNativeTarget "LeknesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E1927C662452EA0700C52BBA /* Debug */,
-				E1927C672452EA0700C52BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
